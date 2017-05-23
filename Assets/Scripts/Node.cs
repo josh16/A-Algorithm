@@ -7,10 +7,17 @@ public class Node : MonoBehaviour {
 	//Boolean for what is walkable
 	public bool walkable;
 
-	//The world position
+	//The nodes world position
 	public Vector3 worldPosition;
 
-	public Node()
+    //Declaring the node Constructor
+    public Node(bool _walkable, Vector3 _worldPos)
+    {
+        walkable = _walkable;
+        worldPosition = _worldPos;
+
+    }
+    
 
 
 	// Use this for initialization
